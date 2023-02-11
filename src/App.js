@@ -63,7 +63,7 @@ function App() {
 							></iframe>
 						</div> */}
 					</div>
-					<div className="animate__animated animate__fadeInRight">
+					<div className="animate__animated animate__fadeInLeft">
 						<SkillTagCloud />
 					</div>
 				</div>
