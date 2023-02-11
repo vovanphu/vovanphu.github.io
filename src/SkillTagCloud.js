@@ -1,4 +1,5 @@
 import { TagCloud } from '@frank-mayer/react-tag-cloud';
+import { useEffect, useState } from 'react';
 
 const skills = [
     'PHP',
@@ -26,12 +27,28 @@ const skills = [
     'Smarty',
 ];
 
+const getRadius = () => {
+    return Math.min(500, window.innerWidth - 100, window.innerHeight - 100) / 2;
+}
+
 function SkillTagCloud() {
+    const [radius, setRadius] = useState(getRadius());
+
+    const handleResize = () => {
+        setRadius(getRadius());
+    }
+
+    useEffect(() => {
+        window.addEventListener('resize', () => {
+            handleResize();
+        });
+    }, []);
+
 	return (
-		<div className='flex items-center justify-center'>
+		<div className='flex items-center justify-center overflow-hidden'>
 			<TagCloud
-				options={(window) => ({
-					radius: Math.min(500, window.innerWidth, window.innerHeight) / 2,
+				options={() => ({
+					radius: radius,
 					maxSpeed: 'normal',
                     initSpeed: 'slow',
 				})}
