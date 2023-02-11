@@ -18,12 +18,9 @@ function App() {
 						</div>
 					</div>
 				</header>
-				<div className="flex items-center gap-20 px-20 pt-10">
-					<div className="animate__animated animate__fadeInLeft">
-						<SkillTagCloud />
-					</div>
+				<div className="lg:flex items-center gap-20 px-10 lg:px-20 pt-10 pb-20">
 					<div className="flex flex-col flex-1 justify-center">
-						<strong className="text-6xl animate__animated animate__fadeInDown">
+						<strong className="text-3xl lg:text-6xl animate__animated animate__fadeInDown">
 							<AnimatedSentence>Hi guys,</AnimatedSentence>
 							<div className="inline-block">
 								<AnimatedSentence>My name is </AnimatedSentence>
@@ -65,6 +62,9 @@ function App() {
 								loading="lazy"
 							></iframe>
 						</div> */}
+					</div>
+					<div className="animate__animated animate__fadeInLeft">
+						<SkillTagCloud />
 					</div>
 				</div>
 			</div>

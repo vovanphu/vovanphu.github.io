@@ -28,7 +28,7 @@ const skills = [
 
 function SkillTagCloud() {
 	return (
-		<div>
+		<div className='flex items-center justify-center'>
 			<TagCloud
 				options={(window) => ({
 					radius: Math.min(500, window.innerWidth, window.innerHeight) / 2,
