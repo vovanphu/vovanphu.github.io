@@ -19,7 +19,7 @@ const AnimatedSentence = (props) => {
 						{character.trim() === "" ? (
 							<span className="mr-2"></span>
 						) : (
-							<span>{character}</span>
+							<span className="hover:text-green-500">{character}</span>
 						)}
 					</ClassHover>
 				);

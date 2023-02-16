@@ -3,8 +3,8 @@ import { useEffect, useState } from 'react';
 
 const skills = [
     'PHP',
-    'SugarCRM',
-    'VtigerCRM',
+    'Sugar CRM',
+    'Vtiger CRM',
     'MySQL',
     'Javascript (ES6+)',
     'HTML',
